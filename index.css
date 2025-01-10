@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lexend, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #000;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#hero h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#hero h2 {
+    color: #a72727;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#hero p {
+    color: white;
+    font-size: 2rem;
+}
+
+#hero button {
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    margin: 20px 15px 15px;
+    padding: .5em 1em;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    background-color: #151515;
+    background-size: 200% auto;
+    background-position: left center;
+}
+
+#hero button:hover {
+    background: linear-gradient(45deg, #091df6, #8708ee, #ea360e, #ea360e);
+    background-size: 300% auto;
+    border: 1px solid transparent;
+    animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0 center;
+    }
+    50% {
+        background-position: 100% center;
+    }
+
+    55% {
+        background-position: 70% center;
+    }
+
+    100% {
+        background-position: 0 center;
+    }
+}

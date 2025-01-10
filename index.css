@@ -42,7 +42,7 @@ body {
     text-align: center;
 }
 
-#hero p {
+#hero .p1 {
     color: white;
     font-size: 2rem;
 }
@@ -87,4 +87,24 @@ body {
     100% {
         background-position: 0 center;
     }
+}
+
+#hero .p2 {
+    color: #4f4f4f;
+    font-size: 1rem;
+}
+
+#about .about1 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#about .about2 {
+    margin-top: 40px;
+    color: #a72727;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 50px;
 }

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lexend, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #000;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin: 30px;
+}
+
+p {
+    color: white;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+span {
+    font-weight: 700;
+    text-align: center;
+}
+
+ul {
+    color: white;
+    font-size: 2rem;
+}

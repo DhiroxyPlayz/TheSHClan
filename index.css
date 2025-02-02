@@ -108,3 +108,127 @@ body {
     text-align: center;
     margin-bottom: 50px;
 }
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* Container for all cards */
+
+.members {
+    padding: 20px 0;
+}
+
+.members h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Container for all cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Center cards in container */
+}
+
+/* Individual card styling */
+.card {
+    flex: 0 1 300px; /* Allow cards to shrink but set ideal width */
+    display: flex;
+    background: #151515;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #333;
+    max-width: 300px; /* Maximum width for cards */
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(107, 107, 107, 0.2);
+}
+
+/* Image styling */
+.card-image {
+    width: 100px; /* Fixed width as requested */
+    height: 100px; /* Maintain square aspect ratio */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Content section */
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Title styling */
+.card-title {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Paragraph text styling */
+.card-text {
+    margin: 0;
+    color: #a72727;
+    font-size: 0.9rem;
+}
+
+/* Members section styling */
+.members {
+    padding: 20px 0;
+}
+
+.members h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+    .card {
+        flex: 0 1 250px; /* Slightly smaller on tablets */
+        max-width: 250px;
+    }
+    
+    .members h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 0 1 100%; /* Full width on mobile */
+        max-width: none;
+    }
+    
+    .card-content {
+        padding: 10px;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .members h1 {
+        font-size: 1.8rem;
+    }
+}
